@@ -1,4 +1,4 @@
-package com.sajidabdali.personalitydevelopmentapp;
+package com.KkTechsol.personalitydevelopment;
 
 import org.junit.Test;
 

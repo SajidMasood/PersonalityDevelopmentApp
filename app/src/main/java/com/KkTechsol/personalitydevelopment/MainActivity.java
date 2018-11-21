@@ -1,17 +1,23 @@
-package com.sajidabdali.personalitydevelopmentapp;
+package com.KkTechsol.personalitydevelopment;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+//import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Callback;
@@ -25,13 +31,12 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private DatabaseReference mDatabase;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // TODO: 11/15/2018 toolbar...
+
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -43,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         // TODO: 11/15/2018 Database References...
         mDatabase = FirebaseDatabase.getInstance().getReference().child("Article");
-        mDatabase.keepSynced(true);
+        //mDatabase.keepSynced(true);
     }
 
 
@@ -119,4 +124,9 @@ public class MainActivity extends AppCompatActivity {
         onBackPressed();
         return true;
     }
+
+
+
+
+
 }

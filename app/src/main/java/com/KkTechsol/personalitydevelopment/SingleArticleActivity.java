@@ -1,4 +1,4 @@
-package com.sajidabdali.personalitydevelopmentapp;
+package com.KkTechsol.personalitydevelopment;
 
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -28,6 +28,7 @@ public class SingleArticleActivity extends AppCompatActivity {
     private DatabaseReference userData,mref;
     private ImageView singleArticleImage;
     RecyclerView recyclerView;
+    private String title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,9 @@ public class SingleArticleActivity extends AppCompatActivity {
         mref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                title = (String)dataSnapshot.child("Title").getValue(); // title getting...
+                toolbar.setTitle(title);
+
                 final String art_image = (String)dataSnapshot.child("Image").getValue();
                 Picasso.with(SingleArticleActivity.this).load(art_image).networkPolicy(NetworkPolicy.OFFLINE).into(singleArticleImage, new Callback() {
                     @Override

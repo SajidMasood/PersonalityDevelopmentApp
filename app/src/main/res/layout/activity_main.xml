@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="@color/mainBackground"
     tools:context=".MainActivity">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:id="@+id/toolbar"
-        android:background="?attr/colorPrimary"
+        android:background="@color/colorToolbar"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
@@ -20,4 +22,15 @@
         android:id="@+id/recyclerView_id"
         android:layout_below="@+id/toolbar"/>
 
-</RelativeLayout>
+
+    <!--
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/banner_AdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_id_banner" />
+        -->
+   </RelativeLayout>

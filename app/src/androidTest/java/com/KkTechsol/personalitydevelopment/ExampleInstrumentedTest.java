@@ -1,4 +1,4 @@
-package com.sajidabdali.personalitydevelopmentapp;
+package com.KkTechsol.personalitydevelopment;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,4 +1,4 @@
-package com.sajidabdali.personalitydevelopmentapp;
+package com.KkTechsol.personalitydevelopment;
 
 public class Articles {
 
@@ -63,4 +63,6 @@ public class Articles {
     public void setImage(String image) {
         Image = image;
     }
+
+
 }

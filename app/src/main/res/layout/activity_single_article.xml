@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorItem"
+    android:background="@color/colorBackground"
     tools:context=".SingleArticleActivity">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:id="@+id/toolbar"
-        android:background="@color/colorItem"
+        android:background="@color/colorToolbar"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <ImageView
@@ -31,4 +31,16 @@
         android:layout_height="match_parent">
     </android.support.v7.widget.RecyclerView>
 
+
+    <!--
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner_AdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_id_banner" />
+        -->
 </RelativeLayout>

@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/singleitemview"
     android:layout_width="match_parent"
-    android:layout_height="90dp"
-    android:layout_margin="1dp"
-    android:background="@color/colorItem"
+    android:layout_height="80dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/recyclerItemColor"
     android:clickable="true"
     android:gravity="start"
     android:orientation="horizontal">
@@ -13,7 +13,7 @@
         android:id="@+id/articleImage"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_margin="5dp"
+        android:layout_margin="0dp"
         android:scaleType="centerCrop" />
 
     <LinearLayout
@@ -36,13 +36,17 @@
         <TextView
             android:id="@+id/articleDesc"
             android:layout_width="280dp"
-            android:layout_height="30dp"
+            android:layout_height="23dp"
             android:layout_below="@+id/articleName"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/articleImage"
-            android:padding="5dp"
+            android:paddingTop="5dp"
+            android:textColor="#000000"
             android:text="Italian Pizza with Extra cheese" />
     </LinearLayout>
+
+
+
 
 </LinearLayout>

@@ -4,7 +4,13 @@
     <color name="colorPrimaryDark">#0288D1</color>
     <color name="colorAccent">#FF4081</color>
 
+
+    <color name="mainBackground">#cfc2c2</color>
+    <color name="recyclerItemColor">#ffffff</color>
+
+
     <!-- item menu popup style color change background-->
-    <color name="colorBackground">#acdcec</color>
-    <color name="colorItem">#76b8d6</color>
+    <color name="colorBackground">#fffffF</color>
+    <color name="colorItem">#060d10</color>
+    <color name="colorToolbar">#62b7de</color>
 </resources>
